@@ -4,7 +4,11 @@ body {
 
 #grilla {
   display: grid;
-  grid-template-areas: "flex-logo header" "nav nav" "subtitulo subtitulo" "main main" "footer footer";
+  grid-template-areas: "flex-logo header"
+ "nav nav"
+ "subtitulo subtitulo"
+ "main main"
+ "footer footer";
   grid-template-rows: 180px 65px 2fr auto 30px;
   grid-template-columns: 50% 50%;
   grid-column-gap: 10px;
@@ -224,7 +228,11 @@ footer {
 @media only screen and (min-width: 1024px) {
   #grilla {
     display: grid;
-    grid-template-areas: "flex-logo header" "nav nav" "subtitulo subtitulo" "main main" "footer footer";
+    grid-template-areas: "flex-logo header"
+ "nav nav"
+ "subtitulo subtitulo"
+ "main main"
+ "footer footer";
     grid-template-rows: 60px 65px 2fr auto 30px;
     grid-template-columns: 50% 50%;
     grid-column-gap: 10px;
@@ -268,7 +276,11 @@ footer {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   #grilla {
     display: grid;
-    grid-template-areas: "flex-logo header" "nav nav" "subtitulo subtitulo" "main main" "footer footer";
+    grid-template-areas: "flex-logo header"
+ "nav nav"
+ "subtitulo subtitulo"
+ "main main"
+ "footer footer";
     grid-template-rows: 60px 65px 2fr auto 30px;
     grid-template-columns: 50% 50%;
     grid-column-gap: 10px;
@@ -383,3 +395,8 @@ footer {
 
 .main-conf {
   height: 300px; }
+
+.img-portfolio {
+    width: 100%;
+    height: 400px;
+  }
