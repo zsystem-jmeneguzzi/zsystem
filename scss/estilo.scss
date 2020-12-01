@@ -1,11 +1,10 @@
 $azul: #6495ED;
-$ubuntu: 'Ubuntu', sans-serif;
+$default-font: 'Raleway', sans-serif;
 
 body {
   margin: 0;
   padding: 0;
 }
-
 
 #grilla {
   display: grid;
@@ -14,7 +13,7 @@ body {
  "subtitulo subtitulo"
  "main main"
  "footer footer";
-  grid-template-rows: 60px 65px 2fr auto 30px;
+  grid-template-rows: 180px 65px 2fr auto 30px;
   grid-template-columns: 50% 50%;
   grid-column-gap: 10px;
   grid-row-gap: 15px;
@@ -78,7 +77,7 @@ footer {
   text-align: center;
   flex-grow: 1;
   color: $azul;
-  font-family: $ubuntu;
+  font-family: $default-font;
   text-align: center;
   letter-spacing: 2px;
   animation-name: miefecto;
@@ -88,15 +87,15 @@ footer {
   animation-delay: 0s; }
 
 .flex-subtitulo {
-  border-radius: 2%;
+
   box-shadow: 0 5px 15px -5px #00000070;
-  padding: 5px;
+  // padding: 5px;
   font-weight: bold;
   font-size: 20px;
   text-align: center;
   flex-grow: 1;
   background: gray;
-  font-family: $ubuntu;
+  font-family: $default-font;
   text-align: center;
   letter-spacing: 2px;
   color: white;
@@ -133,7 +132,7 @@ footer {
 // h1 {
 //   color: $azul;
 //   background: $azul;
-//   font-family: $ubuntu;
+//   font-family: $default-font;
 //   text-align: center;
 //   letter-spacing: 2px; }
 
@@ -149,7 +148,7 @@ footer {
 }
 .cssForm {
   color: white;
-  font-family: $ubuntu;
+  font-family: $default-font;
   border: 1px solid black;
   text-align: center; }
 
@@ -160,7 +159,7 @@ footer {
   font-size: 10px; }
 
 .tabla {
-  font-family: $ubuntu;
+  font-family: $default-font;
   border-collapse: collapse;
   border: 1px solid black;
   text-align: center;
@@ -290,7 +289,7 @@ z-index: 2;
     text-align: center;
     flex-grow: 1;
     background: gray;
-    font-family: $ubuntu;
+    font-family: $default-font;
     text-align: center;
     letter-spacing: 2px;
     color: white; } }
@@ -338,7 +337,7 @@ z-index: 2;
     text-align: center;
     flex-grow: 1;
     background: green;
-    font-family: $ubuntu;
+    font-family: $default-font;
     text-align: center;
     letter-spacing: 2px;
     color: white; } }
@@ -374,7 +373,7 @@ z-index: 2;
     text-align: center;
     flex-grow: 1;
     background: #9932CC;
-    font-family: $ubuntu;
+    font-family: $default-font;
     text-align: center;
     letter-spacing: 2px;
     color: white; } }
@@ -421,3 +420,7 @@ z-index: 2;
 //   z-index: 2;
 //   background-color: $azul;
 // }
+
+.main-conf {
+height: 300px;
+}
