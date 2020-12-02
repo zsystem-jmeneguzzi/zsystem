@@ -123,8 +123,8 @@ nav {
 
 .cssMenuActual {
   color: white;
-  background-color: black;
-  border: 1px solid black; 
+  background-color: gray;
+  border: 1px solid gray; 
   font-weight: bold;
 }
 .cssMenu {
@@ -134,7 +134,7 @@ nav {
 .cssForm {
   color: white;
   font-family: $default-font;
-  border: 1px solid black;
+  border: 1px solid $azul;
   text-align: center; }
 
 .cssSeleecion {
@@ -146,7 +146,7 @@ nav {
 .tabla {
   font-family: $default-font;
   border-collapse: collapse;
-  border: 1px solid black;
+  border: 1px solid gray;
   text-align: center;
   background-color: #4CAF50;
   color: white; }
