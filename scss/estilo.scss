@@ -13,7 +13,7 @@ body {
  "subtitulo subtitulo"
  "main main"
  "footer footer";
-  grid-template-rows: 80px 65px 2fr auto 10px;
+  grid-template-rows: 80px 65px auto auto 10px;
   grid-template-columns: 50% 50%;
   grid-column-gap: 10px;
   grid-row-gap: 5px;
@@ -27,7 +27,8 @@ header {
 
 section#subtitulo {
   grid-area: subtitulo;
-  margin: 15px; }
+  margin: 5px 40px 5px 40px;
+}
 
 section#main {
   grid-area: main;
@@ -58,6 +59,11 @@ nav {
 }
 
 .flex-titulo {
+  // animation-name: miefecto;
+  // animation-iteration-count: 1;
+  // animation-timing-function: linear;
+  // animation-duration: 0.2s;
+  // animation-delay: 0.5s; 
   padding: 15px 5px;
   line-height: 40px;
   font-weight: bold;
@@ -68,16 +74,11 @@ nav {
   font-family: $default-font;
   text-align: center;
   letter-spacing: 2px;
-  animation-name: miefecto;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-  animation-duration: 0.2s;
-  animation-delay: 0.5s; }
+}
 
 .flex-subtitulo {
 
   box-shadow: 0 5px 15px -5px #00000070;
-  // padding: 5px;
   font-weight: bold;
   font-size: 20px;
   text-align: center;
@@ -88,16 +89,6 @@ nav {
   letter-spacing: 2px;
   color: white;
 }
-
-#col1 {
-  text-align: center; }
-
-#col2 {
-  text-align: center; }
-
-#col3 {
-  text-align: center; }
-
 #redes {
   width: 30px;
   height: 100px; }
@@ -171,7 +162,7 @@ nav {
 
 .pie {
   top:40px;
-  background-color: $azul;
+  background-color: gray;
   width: 100%;
   padding: 5px 5px;
   display: block;
@@ -274,13 +265,41 @@ padding: 10px 50px 0 50px;
 line-height: 1em;
 }
 .main-conf h1{
-font-size: 5rem;
+font-size: 5vw; 
+}
+.main-conf h3 {
+    font-size: 2vw;
+    color: white;
+    text-shadow: none;
+    padding: 5px;
+      }
+.main-conf p {
+    font-size: 1vw;
+    text-shadow: none;
+    padding: 5px;        
   }
+
 .img-portfolio {
   width: 100%;
   height: 400px;
-  border: 1px solid $azul;
+  border: 1px solid gray;
 }
+
+.img-portfolio:hover {
+  border: 5px solid $azul;
+}
+
+.precio h3 {
+  font-size: 2.5vw;
+}
+.precio p {
+  font-size: 1.5vw;
+}
+.col {
+  margin: 0 0 20px 0;
+  min-width: 250px;
+}
+
 .banner {
   width: 100%;
   height: 100%;
@@ -305,10 +324,11 @@ font-size: 5rem;
 .btn-contacto{
     display: inline-block;
     width: 200px;
-    height: 50px;
+    height: 55px;
     padding: 10px;
     font-size: 25px;
-    color: rgb(255, 255, 255);
+    color: $azul;
+    background: white;
     border: 5px solid $azul;
     border-radius: 40px;
     text-align: center;
@@ -320,16 +340,24 @@ font-size: 5rem;
   .btn-contacto:hover {
     inline-size: 250px;
     letter-spacing: 2px;
+    color: $azul;
+    background: none;
+    border: 5px solid white;
+    text-decoration: none;
     transition: inline-size 0.2s ease-in,
                 letter-spacing 0.2s ease-in;
   } 
+  
   .btn-demo {
     display: inline-block;
-    width: 250px;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
     height: 50px;
     padding: 5px;
     font-size: 20px;
-    color: rgb(255, 255, 255);
+    color: white;
+    background: gray;
     border: 5px solid gray;
     border-radius: 40px;
     text-align: center;
@@ -339,18 +367,106 @@ font-size: 5rem;
     letter-spacing 0.2s ease-out;
   }
   .btn-demo:hover{
-    inline-size: 310px;
+    inline-size: 250px;
     letter-spacing: 2px;
     border: 5px solid $azul;
+    color:white;
+    background: $azul;
     outline: none;
     text-decoration: none;
     transition: inline-size 0.2s ease-in, letter-spacing 0.2s ease-in;
-              } 
+              }
+
+              .btn-precio {
+                display: inline-block;
+                justify-content: center;
+                align-items: center;
+                width: 120px;
+                height: 50px;
+                padding: 5px;
+                font-size: 20px;
+                color: white;
+                background: gray;
+                border: 5px solid gray;
+                border-radius: 40px;
+                text-align: center;
+                outline: none;
+                text-decoration: none;
+                transition: inline-size 0.2s ease-out,
+                letter-spacing 0.2s ease-out;
+              }
+              .btn-precio:hover{
+                inline-size: 150px;
+                letter-spacing: 3px;
+                border: 5px solid $azul;
+                color:white;
+                background: $azul;
+                outline: none;
+                text-decoration: none;
+                transition: inline-size 0.2s ease-in, letter-spacing 0.2s ease-in;
+                          } 
 
 
+footer:hover {
+  background: $azul;
+}
 
 
+.icono-precio {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  font-size: 80px;
+  color: gray;
+  text-decoration: none;
+}
+.icono-precio:hover{
+  color: $azul;
+  outline: none;
+  text-decoration: none;
+  transform: scale(1.2);
+  transition: transform 0.4s ease-out,
+            } 
+.col-precio:hover {
+  border: 5px solid $azul;
+}
 
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+#popupBody{
+    width: 46%;
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #CCC;
+    background: #FFF;
+    position: relative;
+    transition: all 5s ease-in-out;
+    margin: 20% auto;    
+}
+#cerrar{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #F00;
+}
 
 
 
@@ -401,8 +517,6 @@ font-size: 5rem;
 //     text-align: center;
 //     letter-spacing: 2px;
 //     color: white; } 
-//     .main-conf h1{
-//       font-size: 4rem;
 //          }
 //   }
 
@@ -414,7 +528,7 @@ font-size: 5rem;
 
 
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
   #grilla {
     display: grid;
     grid-template-areas: "flex-logo header"
@@ -449,7 +563,7 @@ font-size: 5rem;
     background: $azul; }
   footer {
     grid-area: footer;
-    background: $azul; }
+    background: gray; }
   .flex-subtitulo {
     padding: 5px;
     font-weight: bold;
@@ -461,11 +575,14 @@ font-size: 5rem;
     text-align: center;
     letter-spacing: 2px;
     color: white; }
-    .main-conf h1{
-     font-size: 3rem;
-        }
+    .precio h3 {
+      font-size: 30px;
     }
-  
+    .precio p {
+      font-size: 20px;
+    }
+
+  }
 
 
 
@@ -495,7 +612,8 @@ font-size: 5rem;
     background: $azul; }
   footer {
     grid-area: footer;
-    background: $azul; }
+    background: gray;
+   }
   .flex-subtitulo {
     padding: 5px;
     font-weight: bold;
@@ -528,28 +646,11 @@ font-size: 5rem;
       text-shadow: none;
       padding: 15px;
         }
-
-    .main-conf h1 {
-    font-size: 30px;
-    text-shadow: none;
-    padding: 5px;
-      }
-      .main-conf h3 {
-        font-size: 25px;
-        color: black;
-        text-shadow: none;
-        padding: 5px;
-          }
-   .main-conf p {
-        font-size: 20px;
-        text-shadow: none;
-        padding: 5px;        
-      }
+  
       .texto-principal {
       padding: 0px 0px 0px 0px;
       }
       .texto-principal h1 {
-        
         font-size: 30px;
         color: black;
         text-shadow: none;
@@ -561,5 +662,10 @@ font-size: 5rem;
             text-shadow: none;
             padding: 5px;        
           }
-  }
-
+          .precio h3 {
+            font-size: 30px;
+          }
+          .precio p {
+            font-size: 20px;
+          }
+        }
